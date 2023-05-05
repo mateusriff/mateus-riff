@@ -1,11 +1,15 @@
 import styled from "styled-components";
 
-const ProjectsWrapper = styled.section`
+export const ProjectsWrapper = styled.section`
     width: 100%;
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
-    padding: 10vh 0;
+    padding: 5vh 0;
 `;
 
-export default ProjectsWrapper;
+export const Title = styled.h1`
+    font-size: 4vh;
+    margin-bottom: 5vh;
+`; 

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { getProjects } from '../../../sanity/sanity-utils';
 import ProjectCard from './ProjectCard';
-import ProjectsWrapper from './style';
+import { ProjectsWrapper, Title } from './style';
 
 type ProjectTypes = {
     _id: string,
@@ -30,6 +30,7 @@ const Projects = () => {
     
     return(
         <ProjectsWrapper>
+            <Title>The projects I&apos;m proud of</Title>
             {projects.map((project: ProjectTypes) => (
                 <ProjectCard 
                 key={project._id}

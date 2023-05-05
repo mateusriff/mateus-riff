@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { getArticles } from '../../../sanity/sanity-utils';
-import ArticlesWrapper from './style';
+import { ArticlesWrapper, Title } from './style';
 import ArticleCard from './ArticleCard';
 
 type ArticleTypes = {
@@ -26,6 +26,7 @@ const Articles = () => {
     
     return(
         <ArticlesWrapper>
+            <Title>The knowledge I share</Title>
             {articles.map((article: ArticleTypes) => (
                 <ArticleCard 
                 key={article._id}

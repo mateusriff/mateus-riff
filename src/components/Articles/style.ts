@@ -1,11 +1,15 @@
 import styled from "styled-components";
 
-const ArticlesWrapper = styled.section`
+export const ArticlesWrapper = styled.section`
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10vh 0;
+    padding: 5vh 0 20vh;
 `;
 
-export default ArticlesWrapper;
+export const Title = styled.h1`
+    font-size: 4vh;
+    margin-bottom: 5vh;
+`; 
