@@ -1,7 +1,7 @@
+import { Projects } from "@/components"
+
 export default function Home() {
   return (
-    <>
-      <p>Paragraph</p>
-    </>
+    <Projects/>
   )
 }

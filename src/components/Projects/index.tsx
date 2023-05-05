@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import { getProjects } from '../../../sanity/sanity-utils';
+import ProjectCard from './ProjectCard';
+import ProjectsWrapper from './style';
 
 type ProjectTypes = {
     _id: string,
@@ -27,18 +29,19 @@ const Projects = () => {
     }, []);
     
     return(
-        <div>
+        <ProjectsWrapper>
             {projects.map((project: ProjectTypes) => (
-                <div key={project._id}>
-                    <p>{project.name}</p>
-                    <ul>
-                        {project.tools.map((tool) => (
-                            <div key={tool}>{tool}</div>
-                        ))}
-                    </ul>
-                </div>
+                <ProjectCard 
+                key={project._id}
+                image={project.image}
+                title={project.name}
+                content={project.content}
+                projectURL={project.projectURL}
+                githubURL={project.githubURL}
+                tools={project.tools}
+                />
             ))}
-        </div>
+        </ProjectsWrapper>
     );
 }
 
