@@ -1,7 +1,10 @@
-import { Projects } from "@/components"
+import { Projects, Articles } from "@/components"
 
 export default function Home() {
   return (
-    <Projects/>
+    <>    
+      <Projects />
+      <Articles />
+    </>
   )
 }

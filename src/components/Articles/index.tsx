@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import { getArticles } from '../../../sanity/sanity-utils';
+import ArticlesWrapper from './style';
+import ArticleCard from './ArticleCard';
 
 type ArticleTypes = {
     _id: string,
@@ -23,13 +25,15 @@ const Articles = () => {
     }, []);
     
     return(
-        <div>
-            {articles.map((project: ArticleTypes) => (
-                <div key={project._id}>
-                    <p>{project.title}</p>
-                </div>
+        <ArticlesWrapper>
+            {articles.map((article: ArticleTypes) => (
+                <ArticleCard 
+                key={article._id}
+                title={article.title}
+                articleURL={article.articleURL}
+                />
             ))}
-        </div>
+        </ArticlesWrapper>
     );
 }
 
