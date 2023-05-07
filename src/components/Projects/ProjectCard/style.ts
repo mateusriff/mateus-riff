@@ -24,6 +24,7 @@ export const StyledImage = styled.img`
 
     @media(max-width: 912px) {
         width: 100%;
+        margin-bottom: 1vh;
     }
 `;
 
@@ -67,6 +68,10 @@ export const StyledIcon = styled(Image)`
     :hover{
         opacity: 1;
         transform: scale(1.05);
+    }
+
+    @media(max-width: 912px) {
+        opacity: 1;
     }
 `;
 
