@@ -9,7 +9,7 @@ export const AboutMeWrapper = styled.section`
     align-items: center;
     gap: 2vh;
     text-align: center;
-    margin-top: 20vh;
+    padding: 25vh 5vw 15vh;
 
     h1{
         font-size: var(--fs-l);
