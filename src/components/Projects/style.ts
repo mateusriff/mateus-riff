@@ -10,6 +10,6 @@ export const ProjectsWrapper = styled.section`
 `;
 
 export const Title = styled.h1`
-    font-size: 4vh;
+    font-size: var(--fs-m);
     margin-bottom: 5vh;
 `; 

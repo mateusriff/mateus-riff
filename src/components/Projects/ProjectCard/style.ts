@@ -60,6 +60,14 @@ export const StyledInfo = styled.div`
     flex-direction: column;
     padding: 0vh 2vw;
     gap: 2vh;
+
+    h1 {
+        font-size: var(--fs-s);
+    }
+
+    p {
+        font-size: var(--fs-xs);
+    }
 `;
 
 export const StyledIcon = styled(Image)`

@@ -11,6 +11,10 @@ export const CardWrapper = styled.div`
     box-shadow: 0px 5px 25px 10px rgba(0, 0, 0, 0.1);
     border-radius: 25px;
 
+    h1 {
+        font-size: var(--fs-s);
+    }
+
     @media(max-width: 768px) {
         width: 90%;
     }

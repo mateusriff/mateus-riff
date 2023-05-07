@@ -12,14 +12,14 @@ export const AboutMeWrapper = styled.section`
     margin-top: 20vh;
 
     h1{
-        font-size: 5vh;
+        font-size: var(--fs-l);
     }
 
     h3{
-        font-size: 3vh;
+        font-size: var(--fs-m);
     }
 
     p{
-        font-size: 2vh;
+        font-size: var(--fs-s);
     }
 `; 

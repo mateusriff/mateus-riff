@@ -36,6 +36,12 @@
   --callout-border-rgb: 172, 175, 176;
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
+
+  --fs-xl: 3.6rem;
+  --fs-l: clamp(1.8rem, 3vw, 3.2rem);
+  --fs-m: clamp(1.4rem, 2.5vw, 2.4rem);
+  --fs-s: clamp(1rem, 2vw, 1.6rem);
+  --fs-xs: clamp(0.8rem, 1.5vw, 1.2rem);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -84,6 +90,7 @@ body {
 }
 
 body {
+  font-size: 16px;
   color: rgb(var(--foreground-rgb));
   background: white;
 }

@@ -6,6 +6,7 @@ const StyledTag = styled.div`
     background-color: gray;
     color: white;
     border-radius: 5px;
+    font-size: var(--fs-xs);
     :hover{
         cursor: default;
     }
