@@ -31,12 +31,16 @@ const ProjectCard = ({ image, title, projectURL, githubURL,  content, tools }: P
                             {title}
                         </h1>
                         <div>
-                            <a href={projectURL} target="_blank">
-                                <StyledIcon src={LinkIcon} alt="Project link" />
-                            </a>
-                            <a href={githubURL} target="_blank">
-                                <StyledIcon src={GitHubIcon} alt="Repository" />
-                            </a>
+                            {projectURL != "" &&                            
+                                <a href={projectURL} target="_blank">
+                                    <StyledIcon src={LinkIcon} alt="Project link" />
+                                </a>
+                            }
+                            {githubURL != "" &&                            
+                                <a href={githubURL} target="_blank">
+                                    <StyledIcon src={GitHubIcon} alt="Repository" />
+                                </a>
+                            }
                         </div>
                     </StyledHeader>
                     <p>{content}</p>
