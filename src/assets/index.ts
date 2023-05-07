@@ -1,4 +1,4 @@
-import GitHubIcon from './github-icon.svg'
+import GitHubIcon from './github-icon.png'
 import LinkIcon from './link-icon.png'
 import MediumIcon from './medium-icon.png'
 
