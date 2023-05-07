@@ -24,22 +24,22 @@ const ProjectCard = ({ image, title, projectURL, githubURL,  content, tools }: P
     return(
         <CardWrapper>
             <StyledContents>
-                <img src={image} alt="Project image"/>
+                <StyledImage src={image} alt="Project image"/>
                 <StyledInfo>
                     <StyledHeader>
                         <h1>
                             {title}
                         </h1>
                         <div>
-                            {projectURL != "" &&                            
-                                <a href={projectURL} target="_blank">
-                                    <StyledIcon src={LinkIcon} alt="Project link" />
-                                </a>
+                            {projectURL &&                            
+                            <a href={projectURL} target="_blank">
+                                <StyledIcon src={LinkIcon} alt="Project link" />
+                            </a>
                             }
-                            {githubURL != "" &&                            
-                                <a href={githubURL} target="_blank">
-                                    <StyledIcon src={GitHubIcon} alt="Repository" />
-                                </a>
+                            {githubURL &&                            
+                            <a href={githubURL} target="_blank">
+                                <StyledIcon src={GitHubIcon} alt="Repository" />
+                            </a>
                             }
                         </div>
                     </StyledHeader>

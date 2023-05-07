@@ -1,5 +1,5 @@
-import Image from "next/image";
 import styled from "styled-components";
+import Image from "next/image";
 
 export const CardWrapper = styled.div`
     width: 60vw;
@@ -11,27 +11,20 @@ export const CardWrapper = styled.div`
     border-radius: 25px;
     border: 0.2rem solid lightgray;
 
-    img{
-        width: 30%;
-        height: auto;
-        object-fit: cover;
-        border-radius: 25px;
-
-        @media(max-width: 768px) {
-            width: 100%;
-        }
-    }
-
     @media(max-width: 768px) {
         width: 90%;
     }
 `;
 
-export const StyledImage = styled(Image)`
-    width: 10vw;
+export const StyledImage = styled.img`
+    width: 30%;
     height: auto;
     object-fit: cover;
     border-radius: 25px;
+
+    @media(max-width: 768px) {
+        width: 100%;
+    }
 `;
 
 export const StyledContents = styled.div`
@@ -65,7 +58,8 @@ export const StyledInfo = styled.div`
 `;
 
 export const StyledIcon = styled(Image)`
-    max-width: clamp(2rem, 2vw, 3rem);
+    width: clamp(2rem, 1.75vw, 3rem);
+    height: auto;
     opacity: 0.5;
     transition: 200ms ease-in-out;
     margin-left: 1vw;
