@@ -8,8 +8,9 @@ export const CardWrapper = styled.div`
     gap: 1vh;
     padding: 5vh 2vw;
     background-color: white;
-    box-shadow: 0px 5px 25px 10px rgba(0, 0, 0, 0.1);
     border-radius: 25px;
+    border: 0.2rem solid lightgray;
+    transition: 0.1s ease-in-out;
 
     img{
         width: 30%;
@@ -20,6 +21,10 @@ export const CardWrapper = styled.div`
         @media(max-width: 768px) {
             width: 100%;
         }
+    }
+
+    :hover{
+        transform: scale(1.01);
     }
 
     @media(max-width: 768px) {
@@ -65,13 +70,14 @@ export const StyledInfo = styled.div`
 `;
 
 export const StyledIcon = styled(Image)`
-            max-width: clamp(1.5rem, 2vw, 3rem);
+    max-width: clamp(1.5rem, 2vw, 3rem);
     opacity: 0.5;
     transition: 200ms ease-in-out;
     margin: 0 0.5vw;
 
     :hover{
         opacity: 1;
+        transform: scale(1.05);
     }
 `;
 
