@@ -11,8 +11,8 @@ export const CardWrapper = styled.div`
     border-radius: 25px;
     border: 0.2rem solid lightgray;
 
-    @media(max-width: 768px) {
-        width: 90%;
+    @media(max-width: 912px) {
+        width: 90vw;
     }
 `;
 
@@ -22,7 +22,7 @@ export const StyledImage = styled.img`
     object-fit: cover;
     border-radius: 25px;
 
-    @media(max-width: 768px) {
+    @media(max-width: 912px) {
         width: 100%;
     }
 `;
@@ -30,7 +30,7 @@ export const StyledImage = styled.img`
 export const StyledContents = styled.div`
     display: flex;
 
-    @media(max-width: 768px) {
+    @media(max-width: 912px) {
         flex-direction: column;
     }
 `;

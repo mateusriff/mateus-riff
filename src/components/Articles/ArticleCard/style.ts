@@ -20,7 +20,7 @@ export const CardWrapper = styled.div`
         transform: scale(1.01);
     }
 
-    @media(max-width: 768px) {
+    @media(max-width: 912px) {
         width: 90vw;
     }
 `;
