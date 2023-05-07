@@ -46,12 +46,6 @@ export const StyledHeader = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    @media(max-width: 768px) {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 2vh;
-    }
 `;
 
 export const StyledInfo = styled.div`
@@ -71,17 +65,13 @@ export const StyledInfo = styled.div`
 `;
 
 export const StyledIcon = styled(Image)`
-    max-width: 1.75vw;
+            max-width: clamp(1.5rem, 2vw, 3rem);
     opacity: 0.5;
     transition: 200ms ease-in-out;
     margin: 0 0.5vw;
 
     :hover{
         opacity: 1;
-    }
-
-    @media(max-width: 768px) {
-        max-width: 32px;
     }
 `;
 
