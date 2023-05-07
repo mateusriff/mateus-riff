@@ -65,10 +65,10 @@ export const StyledInfo = styled.div`
 `;
 
 export const StyledIcon = styled(Image)`
-    max-width: clamp(1.5rem, 2vw, 3rem);
+    max-width: clamp(2rem, 2vw, 3rem);
     opacity: 0.5;
     transition: 200ms ease-in-out;
-    margin: 0 0.5vw;
+    margin-left: 1vw;
 
     :hover{
         opacity: 1;
