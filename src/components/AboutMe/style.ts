@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Image from "next/image";
 
 export const AboutMeWrapper = styled.section`
     width: 100%;
@@ -23,3 +24,14 @@ export const AboutMeWrapper = styled.section`
         font-size: var(--fs-s);
     }
 `; 
+
+export const StyledIcon = styled(Image)`
+    width: clamp(2.2rem, 3vw, 3rem);
+    height: auto;
+    margin: 0 clamp(0.75rem, 0.5vw, 3rem);
+    transition: 200ms ease-in-out;
+
+    :hover{
+        transform: scale(1.05);
+    }
+`;
