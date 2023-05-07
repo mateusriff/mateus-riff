@@ -5,33 +5,28 @@ export const CardWrapper = styled.div`
     width: 40vw;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 5vh 2vw;
+    gap: 1vw;
+    padding: 2.5vh 1vw;
     background-color: white;
-    box-shadow: 0px 5px 25px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 25px;
+    border: 0.2rem solid lightgray;
+    border-radius: 100px;
+    transition: 0.1s ease-in-out;
 
     h1 {
         font-size: var(--fs-s);
     }
 
+    :hover{
+        transform: scale(1.01);
+    }
+
     @media(max-width: 768px) {
-        width: 90%;
+        width: 90vw;
     }
 `;
 
 export const StyledIcon = styled(Image)`
-    max-width: 1.75vw;
+    max-width: clamp(3rem, 5vw, 4rem);
     height: auto;
-    opacity: 0.5;
     transition: 200ms ease-in-out;
-    margin: 0 0.5vw;
-
-    :hover{
-        opacity: 1;
-    }
-
-    @media(max-width: 768px) {
-        max-width: 32px;
-    }
 `;
