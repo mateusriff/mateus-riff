@@ -10,7 +10,6 @@ export const CardWrapper = styled.div`
     background-color: white;
     border-radius: 25px;
     border: 0.2rem solid lightgray;
-    transition: 0.1s ease-in-out;
 
     img{
         width: 30%;
@@ -21,10 +20,6 @@ export const CardWrapper = styled.div`
         @media(max-width: 768px) {
             width: 100%;
         }
-    }
-
-    :hover{
-        transform: scale(1.01);
     }
 
     @media(max-width: 768px) {
